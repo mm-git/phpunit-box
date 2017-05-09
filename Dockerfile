@@ -19,4 +19,4 @@ RUN sed -i -e "s|post_max_size = 8M|post_max_size = 1G|g" /etc/php/7.0/cli/php.i
 RUN apt-get install -y -q postgresql=9.5+173
 COPY pg_hba.conf /etc/postgresql/9.5/main/
 
-RUN curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=compose
+RUN curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
